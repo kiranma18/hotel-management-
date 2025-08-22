@@ -7,99 +7,50 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <!-- Navbar -->
   <header>
     <nav>
       <div class="logo">LuxuryStay</div>
       <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#rooms">Rooms</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
+    <div class="hero">
+      <h1>Welcome to Luxury Stay</h1>
+      <p>Your comfort is our priority. Experience world-class hospitality.</p>
+      <a href="services.html" class="btn">Explore Services</a>
+    </div>
   </header>
 
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <div class="hero-text">
-      <h1>Welcome to Luxury Stay</h1>
-      <p>Experience comfort & elegance like never before.</p>
-      <a href="#rooms" class="btn">Book Now</a>
-    </div>
-  </section>
-
-  <!-- About -->
-  <section id="about" class="about">
-    <h2>About Us</h2>
-    <p>LuxuryStay is a premium hotel management system offering world-class services, elegant rooms, and unforgettable experiences for our guests.</p>
-  </section>
-
-  <!-- Rooms -->
-  <section id="rooms" class="rooms">
-    <h2>Our Rooms</h2>
+  <!-- Featured Rooms -->
+  <section class="rooms">
+    <h2>Featured Rooms</h2>
     <div class="room-container">
       <div class="room-card">
-        <img src="images/room1.jpg" alt="Deluxe Room">
+        <img src="https://source.unsplash.com/600x400/?hotel,room" alt="Deluxe Room">
         <h3>Deluxe Room</h3>
-        <p>Spacious & modern design with king-size bed and luxury facilities.</p>
+        <p>Spacious room with king-size bed and balcony view.</p>
       </div>
       <div class="room-card">
-        <img src="images/room2.jpg" alt="Suite">
+        <img src="https://source.unsplash.com/600x400/?luxury,hotel" alt="Suite">
         <h3>Executive Suite</h3>
-        <p>Enjoy premium comfort with private balcony and city view.</p>
+        <p>Luxury suite with premium amenities and lounge area.</p>
       </div>
       <div class="room-card">
-        <img src="images/room3.jpg" alt="Family Room">
+        <img src="https://source.unsplash.com/600x400/?resort,room" alt="Family Room">
         <h3>Family Room</h3>
-        <p>Perfect for families, with multiple beds and homely ambiance.</p>
+        <p>Comfortable stay for families with multiple beds.</p>
       </div>
     </div>
-  </section>
-
-  <!-- Services -->
-  <section id="services" class="services">
-    <h2>Our Services</h2>
-    <div class="service-container">
-      <div class="service-card">🍽 Fine Dining</div>
-      <div class="service-card">🏊 Swimming Pool</div>
-      <div class="service-card">💆 Spa & Wellness</div>
-      <div class="service-card">🚗 Free Parking</div>
-      <div class="service-card">📶 Free Wi-Fi</div>
-      <div class="service-card">👨‍💼 24/7 Support</div>
-    </div>
-  </section>
-
-  <!-- Gallery -->
-  <section id="gallery" class="gallery">
-    <h2>Gallery</h2>
-    <div class="gallery-grid">
-      <img src="images/hotel1.jpg" alt="Hotel View">
-      <img src="images/hotel2.jpg" alt="Lobby">
-      <img src="images/hotel3.jpg" alt="Restaurant">
-      <img src="images/hotel4.jpg" alt="Pool">
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="contact">
-    <h2>Contact Us</h2>
-    <form id="contactForm">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit" class="btn">Send Message</button>
-    </form>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>© 2025 LuxuryStay Hotel. All Rights Reserved.</p>
+    <p>© 2025 Luxury Stay. All rights reserved.</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
+
