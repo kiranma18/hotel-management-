@@ -1,0 +1,45 @@
+/* General */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Poppins', sans-serif; line-height: 1.6; color: #333; }
+
+/* Navbar */
+header { background: #111; padding: 15px 30px; position: fixed; width: 100%; z-index: 1000; }
+nav { display: flex; justify-content: space-between; align-items: center; }
+.logo { color: #f9c74f; font-size: 22px; font-weight: bold; }
+.nav-links { list-style: none; display: flex; }
+.nav-links li { margin: 0 15px; }
+.nav-links a { text-decoration: none; color: #fff; transition: 0.3s; }
+.nav-links a:hover { color: #f9c74f; }
+
+/* Hero */
+.hero { background: url('images/hotel1.jpg') no-repeat center/cover; height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; color: #fff; }
+.hero-text h1 { font-size: 50px; margin-bottom: 10px; }
+.hero-text p { font-size: 20px; margin-bottom: 20px; }
+.btn { background: #f9c74f; padding: 12px 25px; border-radius: 5px; text-decoration: none; color: #111; font-weight: bold; }
+.btn:hover { background: #ffba08; }
+
+/* Sections */
+section { padding: 80px 20px; text-align: center; }
+h2 { font-size: 32px; margin-bottom: 20px; color: #111; }
+
+/* Rooms */
+.room-container { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+.room-card { background: #fff; padding: 15px; border-radius: 10px; width: 300px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+.room-card img { width: 100%; border-radius: 10px; }
+
+/* Services */
+.service-container { display: grid; grid-template-columns: repeat(auto-fit,minmax(200px,1fr)); gap: 15px; }
+.service-card { background: #f1f1f1; padding: 20px; border-radius: 10px; font-size: 18px; transition: 0.3s; }
+.service-card:hover { background: #f9c74f; color: #111; }
+
+/* Gallery */
+.gallery-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(250px,1fr)); gap: 15px; }
+.gallery-grid img { width: 100%; border-radius: 10px; }
+
+/* Contact */
+form { max-width: 500px; margin: auto; display: flex; flex-direction: column; gap: 10px; }
+input, textarea { padding: 12px; border: 1px solid #ccc; border-radius: 5px; }
+button { cursor: pointer; }
+
+/* Footer */
+footer { background: #111; color: #fff; padding: 20px; text-align: center; }
