@@ -1,0 +1,49 @@
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Arial, sans-serif; line-height: 1.6; }
+
+/* Navbar */
+header { background: #000; color: #fff; }
+nav { display: flex; justify-content: space-between; align-items: center; padding: 15px 40px; }
+.logo { font-size: 24px; font-weight: bold; color: #f9c74f; }
+.nav-links { list-style: none; display: flex; }
+.nav-links li { margin-left: 20px; }
+.nav-links a { text-decoration: none; color: #fff; transition: 0.3s; }
+.nav-links a:hover, .active { color: #f9c74f; }
+
+/* Hero */
+.hero { text-align: center; padding: 100px 20px; background: url("https://source.unsplash.com/1600x800/?luxury,resort") center/cover no-repeat; color: white; }
+.hero h1 { font-size: 48px; }
+.hero p { font-size: 20px; margin: 10px 0; }
+.btn { display: inline-block; padding: 10px 20px; background: #f9c74f; color: black; text-decoration: none; border-radius: 5px; transition: 0.3s; }
+.btn:hover { background: #f9844a; }
+
+/* Sections */
+section { padding: 50px 20px; text-align: center; }
+h2 { margin-bottom: 20px; font-size: 32px; color: #333; }
+p { color: #555; }
+
+/* Rooms & Services */
+.room-container, .service-container { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+.room-card, .service-card { background: #fff; border-radius: 10px; overflow: hidden; width: 300px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.3s; }
+.room-card:hover, .service-card:hover { transform: translateY(-5px); }
+.room-card img, .service-card img { width: 100%; height: 200px; object-fit: cover; }
+.room-card h3, .service-card h3 { margin: 15px 0; color: #222; }
+
+/* About */
+.about img { margin-top: 20px; width: 80%; border-radius: 10px; }
+
+/* Contact */
+form { max-width: 500px; margin: auto; display: flex; flex-direction: column; gap: 15px; }
+input, textarea { padding: 10px; border: 1px solid #ccc; border-radius: 5px; }
+button { border: none; cursor: pointer; }
+
+/* Footer */
+footer { background: #000; color: #fff; text-align: center; padding: 20px; margin-top: 40px; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav { flex-direction: column; }
+  .nav-links { flex-direction: column; margin-top: 10px; }
+  .room-container, .service-container { flex-direction: column; align-items: center; }
+}
